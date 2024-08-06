@@ -20,10 +20,11 @@ Task Manager is a Django-based web application designed to manage and track task
 ### Installation
 
 1. **Clone the repository:**
-2. **Build and run the Docker containers:**
-docker-compose build
-3. **Start the application**
-docker-compose up
+   https://github.com/axl-parangan/task-manager.git
+3. **Build and run the Docker containers:**
+`docker-compose build`
+4. **Start the application**
+`docker-compose up`
 
 This will start the following services:
 
