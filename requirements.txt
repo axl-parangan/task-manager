@@ -4,3 +4,4 @@ celery==5.4.0
 redis==5.0.8
 django-celery-beat
 django-celery-results
+gevent==24.2.1
