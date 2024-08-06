@@ -1,0 +1,35 @@
+# Virtualenv
+venv/
+__pycache__/
+*.pyc
+
+# Environment Variables
+.env
+
+# Django Stuff
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+db.sqlite3
+media
+
+# Docker
+*.pyc
+*.pyo
+__pycache__/
+*.so
+*.swp
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.env
+
+# Celery
+celerybeat-schedule
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
