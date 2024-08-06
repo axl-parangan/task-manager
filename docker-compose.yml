@@ -40,7 +40,7 @@ services:
 
   celery:
     build: .
-    command: celery -A app worker --loglevel=info
+    command: celery -A app worker --loglevel=info --concurrency=4 --pool=gevent --autoscale=10,3
     volumes:
       - ./app:/app
     depends_on:
@@ -54,6 +54,8 @@ services:
       - DB_NAME=devdb
       - DB_USER=devuser
       - DB_PASS=changeme
+      - CELERYD_PREFETCH_MULTIPLIER=1
+      - CELERY_ACKS_LATE=True
 
   celery-beat:
     build: .

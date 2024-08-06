@@ -143,3 +143,6 @@ CELERY_BEAT_SCHEDULE = {
         'schedule': crontab(minute='*'),
     },
 }
+
+CELERYD_TASK_TIME_LIMIT = 300
+CELERYD_TASK_SOFT_TIME_LIMIT = 240
